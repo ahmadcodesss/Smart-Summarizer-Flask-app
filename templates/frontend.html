@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Summarizer</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Orbitron:wght@500;700&display=swap">
+    <link rel="stylesheet" href="{{ url_for('static', filename='Stylesheet1.css') }}?v={{ time }}">
+</head>
+<body>
+    <div class="container">
+        <header class="app-header">
+            <h1 class="app-title">SMART SUMMARIZER</h1>
+            <p class="app-subtitle">AI-powered text condensation tool</p>
+        </header>
+        <div class="box-container">
+            <!-- Input Box -->
+            <div class="textbox input-box">
+                <div class="textbox-header">
+                    <h2 class="textbox-title">INPUT TEXT</h2>
+                </div>
+                <div class="textbox-content">
+                    <textarea id="inputText" placeholder="Paste or type your content here..."></textarea>
+                </div>
+                <div id="inputWordCount" class="word-count">Words: 0</div>
+            </div>
+            <!-- Output Box -->
+            <div class="textbox output-box">
+                <div class="textbox-header">
+                    <h2 class="textbox-title">SUMMARY OUTPUT</h2>
+                </div>
+                <div class="textbox-content">
+                    <div class="output" id="summaryOutput">Your condensed summary will appear here...</div>
+                </div>
+                <div id="outputWordCount" class="word-count">Words: 0</div>
+            </div>
+        </div>
+        <div class="submit-container">
+            <button class="submit-btn" id="summarizeBtn">SUMMARIZE</button>
+        </div>
+        <!-- How to Use Section -->
+        <section class="how-to-use">
+            <h2>How to Use Smart Summarizer</h2>
+            <ol>
+                <li>Paste or type your text into the input box.</li>
+                <li>Enter a minimum of 100 words and a maximum of 800 words.</li>
+                <li>Click the "Summarize" button.</li>
+                <li>Your condensed summary will appear in the output box.</li>
+                <li>Check the word counts to compare input and output.</li>
+                
+            </ol>
+        </section>
+        <!-- More Tools Section -->
+        <section class="more-tools">
+            <h2>More Tools Coming Soon</h2>
+            <p>We are working on adding new AI-powered tools for content creation, analysis, and productivity.</p>
+        </section>
+        <!-- Footer -->
+        <footer class="dev-footer">
+            <h2>Developer Details</h2>
+            <p class="dev-built">Developed by <span class="dev-name">Ahmad Iftikhar</span></p>
+            <p class="dev-built">Powered by <span class="dev-name">facebook/bart-large-cnn</span></p>
+            <div class="dev-links">
+                <span class="dev-link">📧 ahmadiftikhar6789@gmail.com</span>
+                <a href="https://www.linkedin.com/in/ahmad-iftikhar-8294a02a0" target="_blank" class="dev-link">🔗 LinkedIn</a>
+                <a href="https://github.com/ahmadcodesss" target="_blank" class="dev-link">🐙 GitHub</a>
+            </div>
+        </footer>
+    </div>
+    <script src="{{ url_for('static', filename='JavaScript.js') }}"></script>
+</body>
+</html>

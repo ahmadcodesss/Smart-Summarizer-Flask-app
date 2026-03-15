@@ -1,0 +1,7 @@
+
+flask==3.1.1
+flask-cors==6.0.2
+flask-limiter==3.11.0
+python-dotenv==1.2.1 
+requests==2.32.4
+huggingface_hub==0.34.3
