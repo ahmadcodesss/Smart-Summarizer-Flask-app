@@ -5,3 +5,4 @@ flask-limiter==3.11.0
 python-dotenv==1.2.1 
 requests==2.32.4
 huggingface_hub==0.34.3
+gunicorn==23.0.0
