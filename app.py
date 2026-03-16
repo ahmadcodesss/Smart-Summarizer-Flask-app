@@ -16,7 +16,7 @@ load_dotenv()
 app = Flask(__name__)
 app.config['TEMPLATES_AUTO_RELOAD'] = True
 
-CORS(app, origins=["http://localhost:5000"])
+CORS(app, origins=["*"])
 
 limiter = Limiter(
     get_remote_address,
