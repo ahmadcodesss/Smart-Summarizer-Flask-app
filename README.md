@@ -21,8 +21,10 @@ communication with the backend.
 ## Features
 
 - Text summarization using BART-large-CNN model
-- Real-time word count on input and output
-- Client-side and server-side input validation
-- Rate limiting (10 requests/minute)
-- Automatic sentence capitalization on output
-- Async request handling with loading state feedback
+- REST API with a dedicated POST route that accepts and returns JSON
+- Cross-Origin Resource Sharing (CORS) configured to allow cross-origin requests
+- Client-side and server-side input validation rejecting empty and out-of-range inputs (100-800 words)
+- Rate limiting to throttle requests to 10 per minute per IP address
+- Real-time word count tracking on both input and output fields
+- Automatic sentence capitalization applied to summarized output
+- Async request handling with loading state and error feedback
