@@ -6,9 +6,7 @@ Facebook's BART-large-CNN model via the Hugging Face Inference API.
 ## About
 
 Smart Summarizer takes a block of text between 100 and 800 words and  
-returns a concise, readable summary. The backend is built with Flask  
-and exposes a REST API that communicates with the Hugging Face Inference  
-API to perform summarization. The frontend is built with vanilla JavaScript  
+returns a concise, readable summary. The backend is built with Flask. The frontend is built with vanilla JavaScript  
 and handles real-time word count tracking, input validation, and async  
 communication with the backend.
 
