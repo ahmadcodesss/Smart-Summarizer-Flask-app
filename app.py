@@ -16,7 +16,7 @@ from model import summarize_text
 
 load_dotenv()
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='static', static_url_path='/static')
 app.config['TEMPLATES_AUTO_RELOAD'] = True
 
 CORS(app, origins=["*"])
