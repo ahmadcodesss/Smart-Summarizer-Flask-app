@@ -11,7 +11,7 @@ from flask_limiter import Limiter
 from flask_limiter.util import get_remote_address
 from model import summarize_text
 
-print("HF TOKEN:", os.getenv("HF_TOKEN"))
+
 
 
 load_dotenv()
